@@ -1,0 +1,72 @@
+.header {
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
+  &__banner {
+    @include Responsive(tablet) {
+      object-fit: cover;
+      min-height: 40px;
+    }
+  }
+
+  &__logo {
+    width: 20rem;
+    height: auto;
+    @include Responsive(tablet) {
+      display: none;
+    }
+  }
+  &__bell {
+    padding: 1.2rem;
+    font-size: 2.5rem;
+    @include Responsive(tablet) {
+      display: flex !important;
+    }
+  }
+  &__signin {
+    @include Responsive(tablet) {
+      display: none;
+    }
+  }
+  &__navbar {
+    @include Responsive(tablet) {
+      display: none;
+    }
+  }
+  &__city {
+    @include Responsive(tablet) {
+      display: flex !important;
+    }
+  }
+  &__search {
+    &-input {
+      width: 60rem;
+
+      @include Responsive(tablet) {
+        width: 90vw;
+        padding: 1.5rem 0 !important;
+      }
+    }
+    &-line {
+      height: 2.5rem;
+      width: 0.2rem;
+      background-color: $gray-700;
+    }
+    &-img {
+      width: 10%;
+      height: 100%;
+      right: 10%;
+
+      @include Responsive(tablet) {
+        display: flex !important;
+      }
+    }
+    &-icon {
+      font-size: 2rem;
+      position: absolute;
+      left: 2%;
+
+      @include Responsive(tablet) {
+        display: flex !important;
+      }
+    }
+  }
+}

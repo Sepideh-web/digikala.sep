@@ -1,0 +1,18 @@
+.suggest {
+  @include Responsive(tablet) {
+    cursor: grab;
+  }
+
+  &__items {
+    min-width: 20rem;
+  }
+  &__pic {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}

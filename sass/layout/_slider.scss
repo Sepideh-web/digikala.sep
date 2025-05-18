@@ -1,0 +1,35 @@
+.slider {
+  max-height: 40rem;
+  &__pic {
+    @include Responsive(tabletL) {
+      min-height: 268px;
+      cursor: grab;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    bottom: 3rem;
+  }
+  &__navigation {
+    position: absolute;
+    right: 8rem;
+    bottom: 4rem;
+    width: 11rem;
+    height: 5rem;
+    @include Responsive(tablet) {
+      display: none;
+    }
+    &-item {
+      width: 4rem;
+      height: 4rem;
+      background-color: $white;
+      border: 1px solid $subtitle;
+      border-radius: 100%;
+
+      &::after {
+        font-size: $fs-3;
+        color: $subtitle;
+      }
+    }
+  }
+}

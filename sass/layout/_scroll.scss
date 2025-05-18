@@ -1,0 +1,13 @@
+.scroll {
+  cursor: grab;
+  &__content {
+    @include Responsive(tablet) {
+      border-radius: 0rem !important;
+    }
+    &-slide {
+      width: 18rem !important;
+      height: 28rem !important;
+      margin-left: 0.5rem;
+    }
+  }
+}

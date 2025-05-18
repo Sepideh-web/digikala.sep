@@ -1,0 +1,7 @@
+.popular {
+  &__item {
+    max-width: 13rem;
+    padding: 2rem;
+    @include centrizeTag();
+  }
+}

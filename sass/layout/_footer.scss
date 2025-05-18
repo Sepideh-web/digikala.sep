@@ -1,0 +1,21 @@
+.footer {
+  @include Responsive(tablet) {
+    display: none;
+  }
+  &__content {
+  }
+  &__description {
+  }
+  &__right {
+    &-text {
+      max-height: 10rem;
+      line-height: 3rem;
+    }
+  }
+  &__left {
+    &-icon {
+      width: 11rem;
+      height: 11rem;
+    }
+  }
+}

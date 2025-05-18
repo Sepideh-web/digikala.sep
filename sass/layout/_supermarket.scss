@@ -1,0 +1,20 @@
+.supermarket {
+  &__content {
+    &-col {
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    @include Responsive(tablet) {
+      border-radius: 0 !important;
+    }
+  }
+  &__item {
+    width: 8rem;
+    height: 8rem;
+  }
+  &__more {
+    width: 15rem;
+    height: 5rem;
+  }
+}

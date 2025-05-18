@@ -1,0 +1,63 @@
+//!-----------------------Width Project-------------------\
+
+.container2xl {
+  width: 80vw;
+  margin: auto;
+  @include Responsive(laptop) {
+    width: 97vw;
+  }
+}
+
+//!-----------------------Flex Class----------------------
+.flex-center {
+  @include centrizeTag();
+}
+.flex-between {
+  @include centrizeTag($justify: space-between);
+}
+.flex-start {
+  @include centrizeTag(center, start);
+}
+.flex-start2 {
+  @include centrizeTag(start, center);
+}
+.flex-end {
+  @include centrizeTag(center, end);
+}
+.flex-around {
+  @include centrizeTag($justify: space-around);
+}
+//!-----------------------Position Class-------------------
+.position-Center {
+  @include positionCenter();
+}
+.text-justify {
+  text-align: justify;
+}
+//!-----------------------Font Size Class-------------------
+.fs-1 {
+  font-size: $fs-1 !important;
+}
+.fs-2 {
+  font-size: $fs-2 !important;
+}
+.fs-3 {
+  font-size: $fs-3 !important;
+}
+.fs-4 {
+  font-size: $fs-4 !important;
+}
+.fs-5 {
+  font-size: $fs-5 !important;
+}
+//!-----------------------Line Break Class-------------------
+
+.ellipsis-1 {
+  @include lineBreak(1);
+}
+.ellipsis-2 {
+  @include lineBreak();
+}
+.ellipsis-3 {
+  @include lineBreak(3);
+}

@@ -1,0 +1,26 @@
+.brands {
+  margin: auto;
+  &__items {
+    align-items: start;
+  }
+  &__img {
+    max-width: 5rem;
+    @include Responsive(tablet) {
+      max-width: 8rem;
+    }
+  }
+  &__text {
+    max-width: 8.2rem;
+    text-align: center;
+  }
+  &__icon {
+    max-width: 10rem;
+    @include Responsive(tablet) {
+      max-width: 12rem;
+    }
+    background-color: $gray-500;
+    border-radius: 100%;
+    padding: 1.6rem;
+    color: $subtitle;
+  }
+}
